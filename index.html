@@ -4,25 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Felipe López | Consultor en Tecnología, IA y Estrategia Digital · Colombia</title>
-<meta name="description" content="Consultor senior con +20 años como CTO y Director de Innovación. Ayudo a empresas en Colombia y LATAM a decidir cuándo usar IA y cuándo no. Agenda tu llamada gratuita de 30 minutos.">
-<meta name="keywords" content="consultor IA Colombia, AI consultant Colombia, consultor inteligencia artificial, CTO freelance Colombia, technology consultant LATAM, Felipe López consultor">
+<meta name="description" content="Consultor senior con +20 años como CTO y Director de Innovación. Ayudo a empresas en Colombia y LATAM a identificar la solución correcta, armar el equipo adecuado y gestionar el proceso completo.">
+<meta name="keywords" content="consultor IA Colombia, AI consultant Colombia, consultor tecnología LATAM, CTO freelance Colombia, Felipe López consultor">
 <meta name="author" content="Felipe López">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://felipelopez.co/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://felipelopez.co/">
 <meta property="og:title" content="Felipe López | Technology & AI Consultant · Colombia">
-<meta property="og:description" content="+20 years as CTO and Innovation Director. I help you decide when to use AI and when not to.">
+<meta property="og:description" content="+20 years as CTO and Innovation Director. I help you identify the right solution, hire the right team, and manage the full process.">
 <meta property="og:image" content="https://felipelopez.co/og-image.jpg">
 <meta property="og:locale" content="es_CO">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Felipe López","jobTitle":"Technology & AI Consultant","url":"https://felipelopez.co","email":"info@felipelopez.co","telephone":"+573104368890","sameAs":["https://www.linkedin.com/in/felipe-lopez-hiring/"],"knowsAbout":["Artificial Intelligence","Technology Consulting","Product Strategy","Digital Marketing","Software Development"]}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Felipe López","jobTitle":"Technology & AI Consultant","url":"https://felipelopez.co","email":"info@felipelopez.co","telephone":"+573104368890","sameAs":["https://www.linkedin.com/in/felipe-lopez-hiring/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Syne:wght@400;500;600;700&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
-/* === RESET === */
+/* RESET */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:#f2ede6;color:#0f0e0c;font-family:'Syne',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
@@ -31,238 +29,90 @@ body{background:#f2ede6;color:#0f0e0c;font-family:'Syne',sans-serif;font-weight:
 ::-webkit-scrollbar-track{background:#e8e2d8}
 ::-webkit-scrollbar-thumb{background:#3d6b4f}
 
-/* === LANGUAGE === */
+/* LANGUAGE */
 [data-lang="es"] .en{display:none!important}
 [data-lang="en"] .es{display:none!important}
 
-/* === NAV — written without variables so nothing can interfere === */
-#site-nav{
-  position:fixed;
-  top:0;left:0;right:0;
-  height:64px;
-  z-index:9999;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 5vw;
-  background-color:#1a1a16;
-  border-bottom:1px solid rgba(255,255,255,0.08);
-  box-shadow:0 2px 20px rgba(0,0,0,0.4);
-}
-#site-nav .n-logo{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:1.25rem;font-weight:700;
-  color:#f0ebe2;text-decoration:none;
-  white-space:nowrap;flex-shrink:0;
-}
-#site-nav .n-logo em{font-style:italic;color:#5a9472}
-#site-nav .n-links{
-  display:flex;gap:2rem;list-style:none;
-  position:absolute;left:50%;transform:translateX(-50%);
-}
-#site-nav .n-links a{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:0.65rem;letter-spacing:0.13em;text-transform:uppercase;
-  color:rgba(240,235,226,0.45);text-decoration:none;transition:color 0.25s;
-}
-#site-nav .n-links a:hover{color:#5a9472}
-#site-nav .n-right{
-  display:flex;align-items:center;gap:1rem;flex-shrink:0;
-}
-/* pill switch */
-#site-nav .pill{
-  position:relative;display:inline-flex;align-items:center;
-  background:rgba(255,255,255,0.1);
-  border:1px solid rgba(255,255,255,0.2);
-  border-radius:999px;padding:3px;
-}
-#site-nav .pill-track{
-  position:absolute;top:3px;left:3px;
-  width:calc(50% - 3px);height:calc(100% - 6px);
-  background:#3d6b4f;border-radius:999px;
-  transition:transform 0.3s ease;pointer-events:none;
-}
-#site-nav[data-lang="en"] .pill-track,
-html[data-lang="en"] #site-nav .pill-track{transform:translateX(100%)}
-#site-nav .pill button{
-  position:relative;z-index:1;
-  font-family:'IBM Plex Mono',monospace;
-  font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
-  background:none;border:none;cursor:pointer;
-  padding:0.35rem 0.9rem;border-radius:999px;
-  color:rgba(240,235,226,0.4);transition:color 0.2s;
-}
-#site-nav .pill button.active{color:#fff}
-#site-nav .n-cta{
-  font-family:'Syne',sans-serif;font-size:0.75rem;font-weight:600;
-  background:#3d6b4f;color:#fff;
-  padding:0.55rem 1.2rem;border-radius:2px;
-  text-decoration:none;white-space:nowrap;
-  transition:background 0.25s;
-}
-#site-nav .n-cta:hover{background:#527a61}
-#site-nav .n-ham{
-  display:none;background:none;border:none;cursor:pointer;
-  flex-direction:column;gap:5px;padding:6px;
-}
-#site-nav .n-ham span{display:block;width:22px;height:1.5px;background:#f0ebe2}
+/* NAV */
+#site-nav{position:fixed;top:0;left:0;right:0;height:64px;z-index:9999;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;background:#1a1a16;border-bottom:1px solid rgba(255,255,255,0.08);box-shadow:0 2px 20px rgba(0,0,0,0.4)}
+.n-logo{font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;font-weight:700;color:#f0ebe2;text-decoration:none;white-space:nowrap;flex-shrink:0}
+.n-logo em{font-style:italic;color:#5a9472}
+.n-links{display:flex;gap:2rem;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
+.n-links a{font-family:'IBM Plex Mono',monospace;font-size:0.65rem;letter-spacing:0.13em;text-transform:uppercase;color:rgba(240,235,226,0.5);text-decoration:none;transition:color 0.25s}
+.n-links a:hover{color:#5a9472}
+.n-right{display:flex;align-items:center;gap:1rem;flex-shrink:0}
+.pill{position:relative;display:inline-flex;align-items:center;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:999px;padding:3px}
+.pill-track{position:absolute;top:3px;left:3px;width:calc(50% - 3px);height:calc(100% - 6px);background:#3d6b4f;border-radius:999px;transition:transform 0.3s ease;pointer-events:none}
+html[data-lang="en"] .pill-track{transform:translateX(100%)}
+.pill button{position:relative;z-index:1;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;background:none;border:none;cursor:pointer;padding:0.35rem 0.9rem;border-radius:999px;color:rgba(240,235,226,0.45);transition:color 0.2s}
+.pill button.active{color:#fff}
+.n-cta{font-family:'Syne',sans-serif;font-size:0.75rem;font-weight:600;background:#3d6b4f;color:#fff;padding:0.55rem 1.2rem;border-radius:2px;text-decoration:none;white-space:nowrap;transition:background 0.25s}
+.n-cta:hover{background:#527a61}
+.n-ham{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+.n-ham span{display:block;width:22px;height:1.5px;background:#f0ebe2}
 
-/* === MOBILE MENU — completely separate from nav === */
-#mob-menu{
-  position:fixed;top:64px;left:0;right:0;bottom:0;
-  z-index:8888;
-  background:#1a1a16;
-  display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:1.5rem;
-  opacity:0;pointer-events:none;
-  transition:opacity 0.35s ease;
-}
+/* MOBILE MENU */
+#mob-menu{position:fixed;top:64px;left:0;right:0;bottom:0;z-index:8888;background:#1a1a16;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;opacity:0;pointer-events:none;transition:opacity 0.35s ease}
 #mob-menu.open{opacity:1;pointer-events:all}
-#mob-menu a{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:1.8rem;font-weight:400;
-  color:#f0ebe2;text-decoration:none;transition:color 0.25s;
-}
+#mob-menu a{font-family:'Playfair Display',Georgia,serif;font-size:1.8rem;font-weight:400;color:#f0ebe2;text-decoration:none;transition:color 0.25s}
 #mob-menu a:hover{color:#5a9472}
-#mob-menu .mob-pill{
-  position:relative;display:inline-flex;align-items:center;
-  background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);
-  border-radius:999px;padding:3px;margin-top:0.5rem;
-}
-#mob-menu .mob-pill-track{
-  position:absolute;top:3px;left:3px;
-  width:calc(50% - 3px);height:calc(100% - 6px);
-  background:#527a61;border-radius:999px;
-  transition:transform 0.3s ease;pointer-events:none;
-}
-html[data-lang="en"] #mob-menu .mob-pill-track{transform:translateX(100%)}
-#mob-menu .mob-pill button{
-  position:relative;z-index:1;
-  font-family:'IBM Plex Mono',monospace;
-  font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;
-  background:none;border:none;cursor:pointer;
-  padding:0.35rem 0.9rem;border-radius:999px;
-  color:rgba(240,235,226,0.4);transition:color 0.2s;
-}
-#mob-menu .mob-pill button.active{color:#fff}
+.mob-pill{position:relative;display:inline-flex;align-items:center;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);border-radius:999px;padding:3px;margin-top:0.5rem}
+.mob-pill-track{position:absolute;top:3px;left:3px;width:calc(50% - 3px);height:calc(100% - 6px);background:#527a61;border-radius:999px;transition:transform 0.3s ease;pointer-events:none}
+html[data-lang="en"] .mob-pill-track{transform:translateX(100%)}
+.mob-pill button{position:relative;z-index:1;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;background:none;border:none;cursor:pointer;padding:0.35rem 0.9rem;border-radius:999px;color:rgba(240,235,226,0.45);transition:color 0.2s}
+.mob-pill button.active{color:#fff}
 
-/* === HERO === */
-#hero{
-  min-height:100vh;
-  padding:0 5vw;
-  display:flex;align-items:center;
-  position:relative;
-}
-.h-vline{
-  position:absolute;top:0;right:22vw;
-  width:1px;height:100%;
-  background:linear-gradient(to bottom,transparent,#3d6b4f,transparent);
-  opacity:0.1;pointer-events:none;
-}
-.h-inner{
-  position:relative;z-index:1;
-  max-width:660px;
-  padding-top:8rem;padding-bottom:4rem;
-}
-.h-eyebrow{
-  display:flex;align-items:center;gap:0.8rem;
-  font-family:'IBM Plex Mono',monospace;
-  font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:#3d6b4f;
-  margin-bottom:1.8rem;
-  opacity:0;animation:up 0.7s ease 0.1s forwards;
-}
+/* HERO */
+#hero{min-height:100vh;padding:0 5vw;display:flex;align-items:center;position:relative}
+.h-vline{position:absolute;top:0;right:22vw;width:1px;height:100%;background:linear-gradient(to bottom,transparent,#3d6b4f,transparent);opacity:0.1;pointer-events:none}
+.h-inner{position:relative;z-index:1;max-width:660px;padding-top:8rem;padding-bottom:4rem}
+.h-eyebrow{display:flex;align-items:center;gap:0.8rem;font-family:'IBM Plex Mono',monospace;font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:#3d6b4f;margin-bottom:1.8rem;opacity:0;animation:fadeUp 0.7s ease 0.1s forwards}
 .h-eyebrow-line{display:block;width:28px;height:1px;background:#3d6b4f;flex-shrink:0}
-h1{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:clamp(2.2rem,3.6vw,4.2rem);
-  font-weight:400;line-height:1.12;letter-spacing:-0.02em;
-  color:#0f0e0c;margin-bottom:1.5rem;
-  opacity:0;animation:up 0.8s ease 0.25s forwards;
-}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.9rem,3vw,3.6rem);font-weight:400;line-height:1.18;letter-spacing:-0.02em;color:#0f0e0c;margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.8s ease 0.25s forwards}
 h1 em{font-style:italic;font-weight:500;color:#3d6b4f}
-.h-desc{
-  font-size:1rem;color:#7a7568;
-  max-width:480px;line-height:1.85;margin-bottom:2.5rem;
-  opacity:0;animation:up 0.8s ease 0.4s forwards;
-}
-.h-btns{
-  display:flex;gap:1rem;flex-wrap:wrap;
-  opacity:0;animation:up 0.8s ease 0.55s forwards;
-}
-.h-stats{
-  display:flex;gap:3rem;flex-wrap:wrap;
-  margin-top:4rem;padding-top:2.5rem;
-  border-top:1px solid rgba(15,14,12,0.1);
-  opacity:0;animation:up 0.8s ease 0.7s forwards;
-}
+.h-desc{font-size:1rem;color:#7a7568;max-width:480px;line-height:1.85;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.8s ease 0.4s forwards}
+.h-btns{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease 0.55s forwards}
+.h-stats{display:flex;gap:3rem;flex-wrap:wrap;margin-top:4rem;padding-top:2.5rem;border-top:1px solid rgba(15,14,12,0.1);opacity:0;animation:fadeUp 0.8s ease 0.7s forwards}
 .stat{display:flex;flex-direction:column;gap:0.15rem}
-.stat-n{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:2.6rem;font-weight:700;color:#0f0e0c;line-height:1;
-}
+.stat-n{font-family:'Playfair Display',Georgia,serif;font-size:2.6rem;font-weight:700;color:#0f0e0c;line-height:1}
 .stat-n sup{font-size:1rem;vertical-align:super}
-.stat-l{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:#7a7568;
-}
+.stat-l{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:#7a7568}
 
-/* === BUTTONS === */
-.btn-d{
-  display:inline-flex;align-items:center;gap:0.6rem;
-  background:#0f0e0c;color:#f2ede6;
-  padding:0.9rem 1.8rem;
-  font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:600;
-  border-radius:2px;text-decoration:none;border:none;cursor:pointer;
-  transition:all 0.3s ease;
-}
+/* BUTTONS */
+.btn-d{display:inline-flex;align-items:center;gap:0.6rem;background:#0f0e0c;color:#f2ede6;padding:0.9rem 1.8rem;font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:600;border-radius:2px;text-decoration:none;border:none;cursor:pointer;transition:all 0.3s ease}
 .btn-d:hover{background:#3d6b4f;transform:translateY(-2px);box-shadow:0 10px 28px rgba(61,107,79,0.25)}
-.btn-o{
-  display:inline-flex;align-items:center;gap:0.6rem;
-  background:transparent;color:#0f0e0c;
-  padding:0.9rem 1.8rem;
-  font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:500;
-  border-radius:2px;text-decoration:none;
-  border:1.5px solid rgba(15,14,12,0.15);
-  transition:all 0.3s ease;
-}
+.btn-o{display:inline-flex;align-items:center;gap:0.6rem;background:transparent;color:#0f0e0c;padding:0.9rem 1.8rem;font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:500;border-radius:2px;text-decoration:none;border:1.5px solid rgba(15,14,12,0.15);transition:all 0.3s ease}
 .btn-o:hover{border-color:#3d6b4f;color:#3d6b4f}
 
-/* === MARQUEE === */
+/* MARQUEE */
 .marquee{background:#0f0e0c;overflow:hidden;padding:1rem 0}
 .mtrack{display:flex;animation:mrq 30s linear infinite;width:max-content}
 .mi{font-family:'IBM Plex Mono',monospace;font-size:0.67rem;letter-spacing:0.17em;text-transform:uppercase;color:rgba(242,237,230,0.28);padding:0 2.5rem;white-space:nowrap}
 .mi.dot{color:#527a61;padding:0 0.8rem}
-@keyframes mrq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-/* === SECTION BASE === */
-.sec{padding:7rem 5vw}
-.sec.tint{background:#e8e2d8}
-.sec.dark{background:#1c1a16}
+/* SECTIONS — each one explicit, no overrides */
+.sec-light{padding:7rem 5vw;background:#f2ede6}
+.sec-tint{padding:7rem 5vw;background:#e8e2d8}
+.sec-dark{padding:7rem 5vw;background:#1c1a16}
 .inn{max-width:1100px;margin:0 auto}
-.lbl{
-  display:inline-flex;align-items:center;gap:0.6rem;
-  font-family:'IBM Plex Mono',monospace;font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:#3d6b4f;
-  margin-bottom:1rem;
-}
-.lbl::before{content:'';display:block;width:22px;height:1px;background:#3d6b4f}
-.sec.dark .lbl{color:#527a61}
-.sec.dark .lbl::before{background:#527a61}
-.h2{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:clamp(2.1rem,3.8vw,3.6rem);font-weight:400;
-  line-height:1.12;letter-spacing:-0.015em;color:#0f0e0c;margin-bottom:1.4rem;
-}
-.h2 em{font-style:italic;color:#3d6b4f}
-.sec.dark .h2{color:#f2ede6}
-.sec.dark .h2 em{color:#527a61}
-.bt{font-size:1rem;color:#7a7568;max-width:520px;line-height:1.9}
-.sec.dark .bt{color:rgba(242,237,230,0.52)}
 
-/* === REVEAL === */
+/* LABELS & HEADINGS */
+.lbl{display:inline-flex;align-items:center;gap:0.6rem;font-family:'IBM Plex Mono',monospace;font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:#3d6b4f;margin-bottom:1rem}
+.lbl::before{content:'';display:block;width:22px;height:1px;background:#3d6b4f}
+.lbl-dk{display:inline-flex;align-items:center;gap:0.6rem;font-family:'IBM Plex Mono',monospace;font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:#527a61;margin-bottom:1rem}
+.lbl-dk::before{content:'';display:block;width:22px;height:1px;background:#527a61}
+.h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.1rem,3.8vw,3.6rem);font-weight:400;line-height:1.12;letter-spacing:-0.015em;color:#0f0e0c;margin-bottom:1.4rem}
+.h2 em{font-style:italic;color:#3d6b4f}
+.h2-dk{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.1rem,3.8vw,3.6rem);font-weight:400;line-height:1.12;letter-spacing:-0.015em;color:#f2ede6;margin-bottom:1.4rem}
+.h2-dk em{font-style:italic;color:#527a61}
+.bt{font-size:1rem;color:#7a7568;max-width:520px;line-height:1.9}
+.bt-dk{font-size:1rem;color:rgba(242,237,230,0.52);max-width:520px;line-height:1.9}
+
+/* REVEAL */
 .rv{opacity:0;transform:translateY(24px);transition:opacity 0.7s ease,transform 0.7s ease}
 .rv.up{opacity:1;transform:translateY(0)}
 
-/* === PROBLEM === */
+/* PROBLEM */
 .prob-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:center}
 .pcards{display:flex;flex-direction:column;gap:1px}
 .pcard{background:#f2ede6;padding:1.6rem 2rem;border-left:3px solid transparent;transition:all 0.3s ease}
@@ -274,27 +124,26 @@ h1 em{font-style:italic;font-weight:500;color:#3d6b4f}
 .qblock blockquote{font-family:'Playfair Display',Georgia,serif;font-size:1.4rem;font-style:italic;color:#0f0e0c;line-height:1.5}
 .qblock cite{display:block;margin-top:0.8rem;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.15em;text-transform:uppercase;color:#3d6b4f;font-style:normal}
 
-/* === SERVICES === */
+/* SERVICES */
 .svc-top{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;margin-bottom:3.5rem}
 .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(15,14,12,0.1);border:1px solid rgba(15,14,12,0.1);border-radius:4px;overflow:hidden}
 .sc{background:#f2ede6;padding:2.5rem 2.2rem;position:relative;overflow:hidden;transition:background 0.3s}
 .sc::after{content:'';position:absolute;left:0;bottom:0;right:0;height:3px;background:#3d6b4f;transform:scaleX(0);transform-origin:left;transition:transform 0.45s ease}
 .sc:hover{background:#fff}
 .sc:hover::after{transform:scaleX(1)}
-.sn{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#7a7568;margin-bottom:1.2rem}
-.sc h3{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;font-weight:500;color:#0f0e0c;line-height:1.2;margin-bottom:0.8rem}
-.sc p{font-size:0.83rem;color:#7a7568;line-height:1.8}
-.sp{display:inline-block;margin-top:1.2rem;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#3d6b4f;border:1px solid rgba(61,107,79,0.25);padding:0.25rem 0.7rem;border-radius:2px}
 .sc.star{background:#0f0e0c}
 .sc.star:hover{background:#1c1a16}
-.sc.star .sn{color:rgba(242,237,230,0.3)}
-.sc.star h3{color:#f2ede6}
-.sc.star p{color:rgba(242,237,230,0.55)}
-.sc.star .sp{color:#527a61;border-color:rgba(82,122,97,0.4)}
 .sc.star::after{background:#527a61}
+.sn{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:#7a7568;margin-bottom:1.2rem}
+.sc.star .sn{color:rgba(242,237,230,0.3)}
+.sc h3{font-family:'Playfair Display',Georgia,serif;font-size:1.45rem;font-weight:500;color:#0f0e0c;line-height:1.2;margin-bottom:0.8rem}
+.sc.star h3{color:#f2ede6}
+.sc p{font-size:0.83rem;color:#7a7568;line-height:1.8}
+.sc.star p{color:rgba(242,237,230,0.55)}
+.sp{display:inline-block;margin-top:1.2rem;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#3d6b4f;border:1px solid rgba(61,107,79,0.25);padding:0.25rem 0.7rem;border-radius:2px}
+.sc.star .sp{color:#527a61;border-color:rgba(82,122,97,0.4)}
 
-/* === ABOUT === */
-#sobre-mi.sec{background:#1c1a16}
+/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:6rem;align-items:start}
 .avis{position:relative}
 .aimg{width:100%;aspect-ratio:4/5;border-radius:4px;overflow:hidden;border:1px solid rgba(255,255,255,0.07)}
@@ -302,16 +151,14 @@ h1 em{font-style:italic;font-weight:500;color:#3d6b4f}
 .abadge{position:absolute;bottom:-1rem;right:-1rem;width:90px;height:90px;background:#3d6b4f;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .abadge b{font-family:'Playfair Display',Georgia,serif;font-size:1.7rem;font-weight:700;color:#f2ede6;line-height:1}
 .abadge small{font-family:'IBM Plex Mono',monospace;font-size:0.46rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(242,237,230,0.8);text-align:center;line-height:1.4}
-.roles{display:flex;flex-direction:column;margin:1.8rem 0}
-.rr{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)}
-.rr:first-child{border-top:1px solid rgba(255,255,255,0.07)}
-.rname{font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:500;color:#f2ede6}
-.rbadge{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#527a61;border:1px solid rgba(82,122,97,0.35);padding:0.2rem 0.6rem;border-radius:2px;white-space:nowrap;flex-shrink:0}
-.spills{display:flex;flex-wrap:wrap;gap:0.5rem}
-.spill{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(242,237,230,0.38);border:1px solid rgba(255,255,255,0.07);padding:0.28rem 0.7rem;border-radius:2px;transition:all 0.25s}
-.spill:hover{color:#f2ede6;border-color:rgba(255,255,255,0.2)}
+.role-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.role-row:first-child{border-top:1px solid rgba(255,255,255,0.07)}
+.role-name{font-family:'Syne',sans-serif;font-size:0.88rem;font-weight:500;color:#f2ede6}
+.role-badge{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#527a61;border:1px solid rgba(82,122,97,0.35);padding:0.2rem 0.6rem;border-radius:2px;white-space:nowrap;flex-shrink:0}
+.skill-pill{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(242,237,230,0.38);border:1px solid rgba(255,255,255,0.07);padding:0.28rem 0.7rem;border-radius:2px;display:inline-block;margin:0.25rem 0.25rem 0 0;transition:all 0.25s}
+.skill-pill:hover{color:#f2ede6;border-color:rgba(255,255,255,0.2)}
 
-/* === PROCESS === */
+/* PROCESS */
 .proc-top{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;margin-bottom:4rem}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(15,14,12,0.1);border:1px solid rgba(15,14,12,0.1);border-radius:4px;overflow:hidden}
 .pc{background:#e8e2d8;padding:2.2rem 1.8rem;display:flex;flex-direction:column;gap:1.2rem;transition:background 0.3s ease}
@@ -321,19 +168,16 @@ h1 em{font-style:italic;font-weight:500;color:#3d6b4f}
 .pc p{font-size:0.82rem;color:#7a7568;line-height:1.75}
 .pdot{width:8px;height:8px;border-radius:50%;background:#3d6b4f;margin-top:auto}
 
-/* === NO FIT === */
+/* NO FIT */
 .nofit-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
-.nflist{display:flex;flex-direction:column}
 .nfrow{display:flex;align-items:flex-start;gap:1.2rem;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,0.06)}
 .nfrow:first-child{border-top:1px solid rgba(255,255,255,0.06)}
 .nfx{font-family:'IBM Plex Mono',monospace;font-size:0.65rem;color:#c05b5b;flex-shrink:0;margin-top:0.15rem}
 .nfrow span{font-size:0.88rem;color:rgba(242,237,230,0.68);line-height:1.6}
 
-/* === CTA === */
-#contacto{text-align:center;position:relative;overflow:hidden}
+/* CTA */
 .cta-glow{position:absolute;inset:0;background:radial-gradient(ellipse 55% 70% at 50% 50%,rgba(61,107,79,0.07) 0%,transparent 70%);pointer-events:none}
-.cta-inner{position:relative;max-width:680px;margin:0 auto}
-.cta-inner .lbl{justify-content:center}
+.cta-inner{position:relative;max-width:680px;margin:0 auto;text-align:center}
 .cta-t{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:400;line-height:1.1;letter-spacing:-0.02em;color:#0f0e0c;margin-bottom:1.4rem}
 .cta-t em{font-style:italic;color:#3d6b4f}
 .cta-sub{font-size:1rem;color:#7a7568;max-width:440px;margin:0 auto 2.5rem;line-height:1.85}
@@ -349,7 +193,7 @@ h1 em{font-style:italic;font-weight:500;color:#3d6b4f}
 .chlbl{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:#7a7568}
 .chval{font-size:0.82rem;font-weight:500;color:#0f0e0c}
 
-/* === FOOTER === */
+/* FOOTER */
 footer{background:#0f0e0c;padding:1.8rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(255,255,255,0.05)}
 .flogo{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;font-weight:700;color:#f2ede6}
 .flogo em{font-style:italic;color:#527a61}
@@ -357,25 +201,17 @@ footer p{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0
 footer nav a{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(242,237,230,0.28);text-decoration:none;margin-left:1.5rem;transition:color 0.25s}
 footer nav a:hover{color:#527a61}
 
-/* === WHATSAPP === */
-#wa-btn{
-  position:fixed;bottom:2rem;right:2rem;z-index:9998;
-  display:flex;align-items:center;gap:0.7rem;
-  background:#25D366;color:#fff;
-  padding:0.82rem 1.5rem 0.82rem 1rem;
-  border-radius:50px;text-decoration:none;
-  font-family:'Syne',sans-serif;font-size:0.82rem;font-weight:600;
-  box-shadow:0 6px 28px rgba(37,211,102,0.4);
-  transition:all 0.3s ease;animation:wap 3s ease-in-out infinite;
-}
+/* WHATSAPP */
+#wa-btn{position:fixed;bottom:2rem;right:2rem;z-index:9998;display:flex;align-items:center;gap:0.7rem;background:#25D366;color:#fff;padding:0.82rem 1.5rem 0.82rem 1rem;border-radius:50px;text-decoration:none;font-family:'Syne',sans-serif;font-size:0.82rem;font-weight:600;box-shadow:0 6px 28px rgba(37,211,102,0.4);transition:all 0.3s ease;animation:wap 3s ease-in-out infinite}
 #wa-btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(37,211,102,0.5);animation:none}
 #wa-btn svg{width:20px;height:20px;flex-shrink:0}
 
-/* === KEYFRAMES === */
-@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+/* KEYFRAMES */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mrq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes wap{0%,100%{box-shadow:0 6px 28px rgba(37,211,102,0.4)}50%{box-shadow:0 6px 46px rgba(37,211,102,0.6)}}
 
-/* === RESPONSIVE === */
+/* RESPONSIVE */
 @media(max-width:960px){
   #site-nav .n-links{display:none}
   #site-nav .n-ham{display:flex}
@@ -386,7 +222,7 @@ footer nav a:hover{color:#527a61}
   .h-stats{gap:2.5rem}
 }
 @media(max-width:580px){
-  .sec{padding:5rem 5vw}
+  .sec-light,.sec-tint,.sec-dark{padding:5rem 5vw}
   .pgrid{grid-template-columns:1fr}
   .h-stats{flex-direction:column;gap:1.5rem}
   #wa-btn span{display:none}
@@ -397,7 +233,6 @@ footer nav a:hover{color:#527a61}
 </head>
 <body>
 
-<!-- NAV — no mobile menu above it, nothing that can interfere -->
 <nav id="site-nav">
   <a href="#" class="n-logo">Felipe <em>López</em></a>
   <ul class="n-links">
@@ -415,29 +250,25 @@ footer nav a:hover{color:#527a61}
     <a href="https://calendly.com/felipealbertolopez/30min" class="n-cta" target="_blank" rel="noopener">
       <span class="es">Agenda una reunión</span><span class="en">Book a meeting</span>
     </a>
-    <button class="n-ham" id="hambtn" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="n-ham" id="hambtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<!-- MOBILE MENU — placed AFTER nav, starts below it at top:64px -->
 <div id="mob-menu">
   <a href="#sobre-mi" onclick="closeMob()"><span class="es">Sobre mí</span><span class="en">About</span></a>
   <a href="#servicios" onclick="closeMob()"><span class="es">Servicios</span><span class="en">Services</span></a>
   <a href="#proceso" onclick="closeMob()"><span class="es">Proceso</span><span class="en">Process</span></a>
   <a href="#contacto" onclick="closeMob()"><span class="es">Contacto</span><span class="en">Contact</span></a>
   <a href="https://calendly.com/felipealbertolopez/30min" class="btn-d" target="_blank" onclick="closeMob()" style="margin-top:.5rem">
-    <span class="es">Agendar llamada</span><span class="en">Book a call</span>
+    <span class="es">Agendar reunión</span><span class="en">Book a meeting</span>
   </a>
-  <div class="mob-pill" id="mobPill">
+  <div class="mob-pill">
     <div class="mob-pill-track"></div>
     <button class="active" id="mbtn-es" onclick="setLang('es')">ES</button>
     <button id="mbtn-en" onclick="setLang('en')">EN</button>
   </div>
 </div>
 
-<!-- HERO -->
 <section id="hero">
   <div class="h-vline" aria-hidden="true"></div>
   <div class="h-inner">
@@ -447,44 +278,31 @@ footer nav a:hover{color:#527a61}
       <span class="en">Senior Consultant · Colombia &amp; LATAM</span>
     </div>
     <h1>
-      <span class="es">Antes de invertir en IA,<br>necesitas <em>claridad.</em></span>
-      <span class="en">Before investing in AI,<br>you need <em>clarity.</em></span>
+      <span class="es">Tú ya conoces tu negocio.<br><em>La tecnología bien implementada</em><br>es lo que lo lleva al siguiente nivel.</span>
+      <span class="en">You already know your business.<br><em>Technology, well implemented,</em><br>is what takes it to the next level.</span>
     </h1>
     <p class="h-desc">
-      <span class="es">Te ayudo a identificar dónde realmente tiene sentido usar inteligencia artificial, dónde no, y qué mejorar primero en tu producto, marketing o estrategia para generar impacto real.</span>
-      <span class="en">I help you identify where AI truly makes sense, where it doesn't, and what to improve first in your product, marketing or strategy so technology drives real business impact.</span>
+      <span class="es">No solo te asesoro — te ayudo a identificar la solución correcta, a armar el equipo adecuado y a gestionar todo el proceso para resolver la necesidad completa de tu negocio.</span>
+      <span class="en">I don't just advise — I help you identify the right solution, hire the right team, and manage the entire process to fully solve your business need.</span>
     </p>
     <div class="h-btns">
       <a href="https://calendly.com/felipealbertolopez/30min" class="btn-d" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        <span class="es">Agenda tu llamada gratuita</span>
-        <span class="en">Book your free call</span>
+        <span class="es">Agenda tu reunión gratuita</span>
+        <span class="en">Book your free meeting</span>
       </a>
       <a href="#servicios" class="btn-o">
         <span class="es">Ver servicios</span><span class="en">See services</span> →
       </a>
     </div>
     <div class="h-stats">
-      <div class="stat">
-        <span class="stat-n">20<sup>+</sup></span>
-        <span class="stat-l es">Años de experiencia</span>
-        <span class="stat-l en">Years of experience</span>
-      </div>
-      <div class="stat">
-        <span class="stat-n">12</span>
-        <span class="stat-l es">Países de operación</span>
-        <span class="stat-l en">Countries served</span>
-      </div>
-      <div class="stat">
-        <span class="stat-n" style="font-size:1.7rem;padding-top:.5rem">CTO</span>
-        <span class="stat-l es">Director de Innovación</span>
-        <span class="stat-l en">Innovation Director</span>
-      </div>
+      <div class="stat"><span class="stat-n">20<sup>+</sup></span><span class="stat-l es">Años de experiencia</span><span class="stat-l en">Years of experience</span></div>
+      <div class="stat"><span class="stat-n">12</span><span class="stat-l es">Países de operación</span><span class="stat-l en">Countries served</span></div>
+      <div class="stat"><span class="stat-n" style="font-size:1.7rem;padding-top:.5rem">CTO</span><span class="stat-l es">Director de Innovación</span><span class="stat-l en">Innovation Director</span></div>
     </div>
   </div>
 </section>
 
-<!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="mtrack">
     <span class="mi es">Consultoría en IA</span><span class="mi en">AI Consulting</span><span class="mi dot">·</span>
@@ -492,6 +310,7 @@ footer nav a:hover{color:#527a61}
     <span class="mi es">Transformación Digital</span><span class="mi en">Digital Transformation</span><span class="mi dot">·</span>
     <span class="mi es">Marketing Digital</span><span class="mi en">Digital Marketing</span><span class="mi dot">·</span>
     <span class="mi es">Desarrollo de Software</span><span class="mi en">Software Development</span><span class="mi dot">·</span>
+    <span class="mi es">Gestión de Equipos</span><span class="mi en">Team Management</span><span class="mi dot">·</span>
     <span class="mi">CTO Fractional</span><span class="mi dot">·</span>
     <span class="mi">Colombia · LATAM · USA</span><span class="mi dot">·</span>
     <span class="mi es">Consultoría en IA</span><span class="mi en">AI Consulting</span><span class="mi dot">·</span>
@@ -499,13 +318,13 @@ footer nav a:hover{color:#527a61}
     <span class="mi es">Transformación Digital</span><span class="mi en">Digital Transformation</span><span class="mi dot">·</span>
     <span class="mi es">Marketing Digital</span><span class="mi en">Digital Marketing</span><span class="mi dot">·</span>
     <span class="mi es">Desarrollo de Software</span><span class="mi en">Software Development</span><span class="mi dot">·</span>
+    <span class="mi es">Gestión de Equipos</span><span class="mi en">Team Management</span><span class="mi dot">·</span>
     <span class="mi">CTO Fractional</span><span class="mi dot">·</span>
     <span class="mi">Colombia · LATAM · USA</span><span class="mi dot">·</span>
   </div>
 </div>
 
-<!-- PROBLEMA -->
-<section id="problema" class="sec tint">
+<section id="problema" class="sec-tint">
   <div class="inn">
     <div class="prob-grid">
       <div class="rv">
@@ -529,8 +348,7 @@ footer nav a:hover{color:#527a61}
   </div>
 </section>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="sec">
+<section id="servicios" class="sec-light">
   <div class="inn">
     <div class="svc-top">
       <div class="rv">
@@ -541,16 +359,15 @@ footer nav a:hover{color:#527a61}
       <p class="bt rv en">I work with a trusted technical team. We reduce costs, risks, and decision timelines.</p>
     </div>
     <div class="svc-grid">
-      <div class="sc star rv"><div class="sn es">01 · Punto de entrada</div><div class="sn en">01 · Entry point</div><h3><span class="es">Diagnóstico Estratégico</span><span class="en">Strategic Diagnosis</span></h3><p class="es">Llamada gratuita de 30 minutos para entender tu negocio y objetivos. Identificamos oportunidades reales en IA, tecnología o estrategia.</p><p class="en">A free 30-minute call to understand your business and goals. We identify real opportunities in AI, technology or strategy.</p><span class="sp es">Gratis · 30 minutos</span><span class="sp en">Free · 30 minutes</span></div>
+      <div class="sc star rv"><div class="sn es">01 · Punto de entrada</div><div class="sn en">01 · Entry point</div><h3><span class="es">Diagnóstico Estratégico</span><span class="en">Strategic Diagnosis</span></h3><p class="es">Reunión gratuita de 30 minutos para entender tu negocio y objetivos. Identificamos oportunidades reales en IA, tecnología o estrategia.</p><p class="en">A free 30-minute meeting to understand your business and goals. We identify real opportunities in AI, technology or strategy.</p><span class="sp es">Gratis · 30 minutos</span><span class="sp en">Free · 30 minutes</span></div>
       <div class="sc rv"><div class="sn es">02 · Hoja de ruta</div><div class="sn en">02 · Roadmap</div><h3><span class="es">Estrategia y Roadmap</span><span class="en">Strategy &amp; Roadmap</span></h3><p class="es">Plan claro y accionable con priorización correcta. Reducimos riesgos antes de invertir en desarrollo.</p><p class="en">A clear, actionable plan with proper prioritization. We reduce risk before investing in development.</p><span class="sp es">Estrategia</span><span class="sp en">Strategy</span></div>
       <div class="sc rv"><div class="sn es">03 · Validación</div><div class="sn en">03 · Validation</div><h3><span class="es">Prototipos y MVPs</span><span class="en">Prototypes &amp; MVPs</span></h3><p class="es">MVPs, pruebas de concepto e integraciones en beta. Validación rápida sin grandes inversiones iniciales.</p><p class="en">MVPs, proof of concepts and beta integrations. Fast validation without large upfront investments.</p><span class="sp">Product · Tech</span></div>
-      <div class="sc rv"><div class="sn es">04 · Ejecución</div><div class="sn en">04 · Execution</div><h3><span class="es">Implementación y Acompañamiento</span><span class="en">Implementation &amp; Support</span></h3><p class="es">IA cuando aporta valor, software tradicional cuando es la mejor opción. Sin necesidad de contratar equipos internos.</p><p class="en">AI when it adds real value, traditional software when it's the better option. No need to hire internal teams.</p><span class="sp es">Implementación</span><span class="sp en">Implementation</span></div>
+      <div class="sc rv"><div class="sn es">04 · Ejecución</div><div class="sn en">04 · Execution</div><h3><span class="es">Implementación y Acompañamiento</span><span class="en">Implementation &amp; Support</span></h3><p class="es">IA cuando aporta valor, software tradicional cuando es la mejor opción. Si lo necesitas, te ayudo a contratar el equipo correcto y a gestionarlo para resolver la necesidad completa.</p><p class="en">AI when it adds real value, traditional software when it's the better option. If needed, I help you hire the right team and manage them to fully solve the need.</p><span class="sp es">Implementación</span><span class="sp en">Implementation</span></div>
     </div>
   </div>
 </section>
 
-<!-- SOBRE MÍ -->
-<section id="sobre-mi" class="sec dark">
+<section id="sobre-mi" class="sec-dark">
   <div class="inn">
     <div class="about-grid">
       <div class="avis rv">
@@ -558,26 +375,30 @@ footer nav a:hover{color:#527a61}
         <div class="abadge"><b>20+</b><small class="es">años de<br>experiencia</small><small class="en">years of<br>experience</small></div>
       </div>
       <div>
-        <div class="lbl rv es">Sobre mí</div><div class="lbl rv en">About me</div>
-        <h2 class="h2 rv"><span class="es">Soy <em>Felipe López</em></span><span class="en">I'm <em>Felipe López</em></span></h2>
-        <p class="bt rv es">Consultor senior con más de 20 años de experiencia en tecnología, desarrollo de software, marketing digital, estrategia de producto e inteligencia artificial.</p>
-        <p class="bt rv en">Senior consultant with over 20 years of experience in technology, software development, digital marketing, product strategy, and artificial intelligence.</p>
-        <p class="bt rv" style="margin-top:1rem"><span class="es">Además de mi formación técnica, estudié Periodismo — lo que me permite entender la psique del usuario y mejorar la narrativa de productos. He liderado equipos en Colombia, LATAM y USA.</span><span class="en">Beyond my technical background, I studied Journalism — which allows me to understand user psychology and sharpen product narratives. I've led teams across Colombia, LATAM, and the USA.</span></p>
-        <div class="roles rv">
-          <div class="rr"><span class="rname">CTO · Chief Technology Officer</span><span class="rbadge es">Liderazgo técnico</span><span class="rbadge en">Tech leadership</span></div>
-          <div class="rr"><span class="rname es">Director de Innovación</span><span class="rname en">Innovation Director</span><span class="rbadge es">Estrategia</span><span class="rbadge en">Strategy</span></div>
-          <div class="rr"><span class="rname">Project Manager</span><span class="rbadge es">Ejecución</span><span class="rbadge en">Execution</span></div>
+        <div class="lbl-dk rv es">Sobre mí</div><div class="lbl-dk rv en">About me</div>
+        <h2 class="h2-dk rv"><span class="es">Soy <em>Felipe López</em></span><span class="en">I'm <em>Felipe López</em></span></h2>
+        <p class="bt-dk rv es">Consultor senior con más de 20 años de experiencia en tecnología, desarrollo de software, marketing digital, estrategia de producto e inteligencia artificial.</p>
+        <p class="bt-dk rv en">Senior consultant with over 20 years of experience in technology, software development, digital marketing, product strategy, and artificial intelligence.</p>
+        <p class="bt-dk rv" style="margin-top:1rem">
+          <span class="es">No me limito a asesorar: cuando el proyecto lo requiere, ayudo a contratar el equipo correcto y a gestionarlo para resolver la necesidad completa. Además de mi formación técnica, estudié Periodismo — lo que me permite entender la psique del usuario y mejorar la narrativa de productos.</span>
+          <span class="en">I don't just consult: when the project requires it, I help hire the right team and manage it to fully solve the need. Beyond my technical background, I studied Journalism — which allows me to understand user psychology and sharpen product narratives.</span>
+        </p>
+        <div style="margin:1.8rem 0" class="rv">
+          <div class="role-row"><span class="role-name">CTO · Chief Technology Officer</span><span class="role-badge es">Liderazgo técnico</span><span class="role-badge en">Tech leadership</span></div>
+          <div class="role-row"><span class="role-name es">Director de Innovación</span><span class="role-name en">Innovation Director</span><span class="role-badge es">Estrategia</span><span class="role-badge en">Strategy</span></div>
+          <div class="role-row"><span class="role-name">Project Manager</span><span class="role-badge es">Ejecución</span><span class="role-badge en">Execution</span></div>
         </div>
-        <div class="spills rv">
-          <span class="spill es">Inteligencia Artificial</span><span class="spill en">Artificial Intelligence</span>
-          <span class="spill es">Tecnología</span><span class="spill en">Technology</span>
-          <span class="spill es">Producto Digital</span><span class="spill en">Digital Product</span>
-          <span class="spill es">Marketing Digital</span><span class="spill en">Digital Marketing</span>
-          <span class="spill es">Desarrollo de Software</span><span class="spill en">Software Development</span>
-          <span class="spill">Periodismo / Journalism</span>
-          <span class="spill">Colombia · LATAM · USA</span>
+        <div style="margin-bottom:2rem" class="rv">
+          <span class="skill-pill es">Inteligencia Artificial</span><span class="skill-pill en">Artificial Intelligence</span>
+          <span class="skill-pill es">Tecnología</span><span class="skill-pill en">Technology</span>
+          <span class="skill-pill es">Producto Digital</span><span class="skill-pill en">Digital Product</span>
+          <span class="skill-pill es">Marketing Digital</span><span class="skill-pill en">Digital Marketing</span>
+          <span class="skill-pill es">Desarrollo de Software</span><span class="skill-pill en">Software Development</span>
+          <span class="skill-pill es">Gestión de Equipos</span><span class="skill-pill en">Team Management</span>
+          <span class="skill-pill">Periodismo / Journalism</span>
+          <span class="skill-pill">Colombia · LATAM · USA</span>
         </div>
-        <div style="margin-top:2rem" class="rv">
+        <div class="rv">
           <a href="https://www.linkedin.com/in/felipe-lopez-hiring/" class="btn-o" target="_blank" rel="noopener" style="color:#f2ede6;border-color:rgba(255,255,255,0.15)">
             <span class="es">Ver trayectoria en LinkedIn →</span><span class="en">View full profile on LinkedIn →</span>
           </a>
@@ -587,8 +408,7 @@ footer nav a:hover{color:#527a61}
   </div>
 </section>
 
-<!-- PROCESO -->
-<section id="proceso" class="sec">
+<section id="proceso" class="sec-tint">
   <div class="inn">
     <div class="proc-top">
       <div class="rv">
@@ -607,17 +427,16 @@ footer nav a:hover{color:#527a61}
   </div>
 </section>
 
-<!-- NO FIT -->
-<section id="no-fit" class="sec dark">
+<section id="no-fit" class="sec-dark">
   <div class="inn">
     <div class="nofit-grid">
       <div class="rv">
-        <div class="lbl es">Honestidad ante todo</div><div class="lbl en">Honesty first</div>
-        <h2 class="h2"><span class="es">No soy la persona<br><em>indicada</em> si…</span><span class="en">I'm not the right fit<br><em>if you…</em></span></h2>
-        <p class="bt es">Prefiero ser directo desde el inicio. Así me enfoco en quienes realmente puedo ayudar.</p>
-        <p class="bt en">I prefer being direct from the start. That way I focus on those I can truly help.</p>
+        <div class="lbl-dk es">Honestidad ante todo</div><div class="lbl-dk en">Honesty first</div>
+        <h2 class="h2-dk"><span class="es">No soy la persona<br><em>indicada</em> si…</span><span class="en">I'm not the right fit<br><em>if you…</em></span></h2>
+        <p class="bt-dk es">Prefiero ser directo desde el inicio. Así me enfoco en quienes realmente puedo ayudar.</p>
+        <p class="bt-dk en">I prefer being direct from the start. That way I focus on those I can truly help.</p>
       </div>
-      <div class="nflist rv">
+      <div class="rv">
         <div class="nfrow"><span class="nfx">✕</span><span class="es">Buscas implementar IA solo por moda o porque lo hace la competencia</span><span class="en">Want to implement AI just because it's trendy or competitors are doing it</span></div>
         <div class="nfrow"><span class="nfx">✕</span><span class="es">Esperas resultados mágicos sin ajustar procesos internos</span><span class="en">Expect magical results without adjusting internal processes</span></div>
         <div class="nfrow"><span class="nfx">✕</span><span class="es">No estás dispuesto a cuestionar tu producto, modelo o estrategia actual</span><span class="en">Are unwilling to question your current product, model or strategy</span></div>
@@ -627,11 +446,11 @@ footer nav a:hover{color:#527a61}
   </div>
 </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="sec">
+<section id="contacto" class="sec-light" style="position:relative;overflow:hidden">
   <div class="cta-glow" aria-hidden="true"></div>
   <div class="cta-inner inn">
-    <div class="lbl rv es">Hablemos</div><div class="lbl rv en">Let's talk</div>
+    <div class="lbl rv es" style="justify-content:center">Hablemos</div>
+    <div class="lbl rv en" style="justify-content:center">Let's talk</div>
     <h2 class="cta-t rv"><span class="es">Hablemos de<br><em>tu proyecto</em></span><span class="en">Let's talk about<br><em>your project</em></span></h2>
     <p class="cta-sub rv es">30 minutos son suficientes para darte una orientación clara y honesta. Sin compromiso, sin presión.</p>
     <p class="cta-sub rv en">30 minutes is all it takes to give you clear, honest direction. No commitment, no pressure.</p>
@@ -654,12 +473,11 @@ footer nav a:hover{color:#527a61}
       <a href="https://wa.me/573104368890" class="chip" target="_blank" rel="noopener"><div class="chi">📱</div><div class="chinfo"><span class="chlbl">WhatsApp</span><span class="chval">+57 310 436 8890</span></div></a>
       <a href="mailto:info@felipelopez.co" class="chip"><div class="chi">✉️</div><div class="chinfo"><span class="chlbl">Email</span><span class="chval">info@felipelopez.co</span></div></a>
       <a href="https://www.linkedin.com/in/felipe-lopez-hiring/" class="chip" target="_blank" rel="noopener"><div class="chi">💼</div><div class="chinfo"><span class="chlbl">LinkedIn</span><span class="chval">Felipe López</span></div></a>
-      <a href="https://calendly.com/felipealbertolopez/30min" class="chip" target="_blank" rel="noopener"><div class="chi">📅</div><div class="chinfo"><span class="chlbl">Calendly</span><span class="chval es">Agendar llamada</span><span class="chval en">Book a call</span></div></a>
+      <a href="https://calendly.com/felipealbertolopez/30min" class="chip" target="_blank" rel="noopener"><div class="chi">📅</div><div class="chinfo"><span class="chlbl">Calendly</span><span class="chval es">Agendar reunión</span><span class="chval en">Book a meeting</span></div></a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="flogo">Felipe <em>López</em></div>
   <p class="es">© 2026 Felipe López · Consultor en Tecnología, IA y Estrategia Digital · Colombia</p>
@@ -671,7 +489,6 @@ footer nav a:hover{color:#527a61}
   </nav>
 </footer>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/573104368890?text=Hola%20Felipe%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20gustar%C3%ADa%20conversar." id="wa-btn" target="_blank" rel="noopener">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   <span class="es">Escríbeme</span><span class="en">Write me</span>
@@ -680,35 +497,24 @@ footer nav a:hover{color:#527a61}
 <script>
 function setLang(l) {
   document.documentElement.setAttribute('data-lang', l);
-  // Update nav pill
   document.getElementById('btn-es').classList.toggle('active', l === 'es');
   document.getElementById('btn-en').classList.toggle('active', l === 'en');
-  // Update mobile pill
   document.getElementById('mbtn-es').classList.toggle('active', l === 'es');
   document.getElementById('mbtn-en').classList.toggle('active', l === 'en');
   localStorage.setItem('fl-lang', l);
 }
-
-// Init language
 (function() {
   var saved = localStorage.getItem('fl-lang');
-  var auto  = (navigator.language||'es').toLowerCase().startsWith('en') ? 'en' : 'es';
+  var auto = (navigator.language||'es').toLowerCase().startsWith('en') ? 'en' : 'es';
   setLang(saved || auto);
 })();
-
-// Mobile menu
-var hambtn  = document.getElementById('hambtn');
+var hambtn = document.getElementById('hambtn');
 var mobMenu = document.getElementById('mob-menu');
 hambtn.addEventListener('click', function() {
   var open = mobMenu.classList.toggle('open');
   document.body.style.overflow = open ? 'hidden' : '';
 });
-function closeMob() {
-  mobMenu.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-// Scroll reveal
+function closeMob() { mobMenu.classList.remove('open'); document.body.style.overflow = ''; }
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(e, i) {
     if (e.isIntersecting) {
@@ -719,18 +525,12 @@ var observer = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.1 });
 document.querySelectorAll('.rv').forEach(function(el) { observer.observe(el); });
-
-// Nav shrink on scroll
 var siteNav = document.getElementById('site-nav');
 window.addEventListener('scroll', function() {
-  siteNav.style.boxShadow = window.scrollY > 10
-    ? '0 4px 30px rgba(0,0,0,0.5)'
-    : '0 2px 20px rgba(0,0,0,0.4)';
+  siteNav.style.boxShadow = window.scrollY > 10 ? '0 4px 30px rgba(0,0,0,0.5)' : '0 2px 20px rgba(0,0,0,0.4)';
 }, { passive: true });
-
-// Active nav links
 var sections = document.querySelectorAll('section[id]');
-var navLinks  = document.querySelectorAll('#site-nav .n-links a');
+var navLinks = document.querySelectorAll('#site-nav .n-links a');
 window.addEventListener('scroll', function() {
   var cur = '';
   sections.forEach(function(s) { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
